@@ -61,4 +61,54 @@ elephant1_lb > elephant2_lb
 myelephants <- c(elephant1_lb, elephant2_lb)
 which(myelephants ==max(myelephants))
 which(myelephants == min(myelephants))
-avg(myelephants)
+
+#what is a working directory
+#its a way to tell R where to pull information from
+
+
+#Project management
+
+
+#working directory and file paths
+getwd()
+[1] "C:/Users/paulr/Dropbox/Davis/R-Projects/R_DAVIS_in_class_project_PRonevich1"
+d <- read.csv"./data/tail_length.csv"
+#best practices
+# treat raw data as read only
+# treat generated output as disponsable
+dir.create
+### Inspection ----
+#### Subsection ----
+##### subsub ----
+length(weight_g)
+str(weight_g) ### THis tells you the structure fo the data
+
+
+### Change vectors ----
+weight_g <- c(weight_g, 90)
+
+
+num_char <- c(1, 2, 3, "a")
+num_logical <- c(1, 2, 3, TRUE)
+### coerce makes them all be the same. Made the True into a 1
+char_logical <- c("a", "b", "c", TRUE)
+tricky <- c(1, 2, 3, "4")
+
+animals <- c("mouse", "rat", "dog", "cat")
+animals
+animals [2]
+animals [5]
+animals[-1]
+animals [-4]
+animals [-5]
+animals [-2]
+
+weight_g <- c(21,34, 39, 54,66, 49, 44,322)
+weight_g > 50
+weight_g[weight_g >50]
+%in% ## means within - grab this set of values withing this other set of values
+animals
+animals %in% c("rat", "cat", "dog", "duck", "goat")
+### this is the bucket method. Is dog in both bucket a and b
+animals == c("rat", "cat", "dog", "duck", "goat")
+### this is pairwise thingie - is rat also in list 2 in the same position
